@@ -17,7 +17,7 @@ function drawLine(x1,y1,x2,y2){
 
 let painting;
 let last;
-var isTouchDevice = 'ontouchstart' in document.documentElement;
+let isTouchDevice = 'ontouchstart' in document.documentElement;
 if (isTouchDevice){
     canvas.ontouchstart = (e) =>{
         let x = e.touches[0].clientX;
